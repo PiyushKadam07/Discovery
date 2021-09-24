@@ -1,13 +1,17 @@
 .DS_Store
-node_modules
+/node_modules
 /dist
+main.mp4
 Homepage.vue
 About.vue
 Experience.vue
 Home.vue
+Carousel.vue
 Press.vue
-
-
+# Galleryheader.vue
+# Galleryphotos.vue
+# Gallery.vue
+# images_gallery.txt
 
 # local env files
 .env.local

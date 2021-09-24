@@ -1,5 +1,6 @@
 <template>
   <div class="main-gallery-div">
+    <Header />
     <Galleryheader />
     <Galleryphotos />
     <Footer />
@@ -9,12 +10,14 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import Header from '@/components/Header.vue';
 import Galleryheader from '@/components/Galleryheader.vue';
 import Galleryphotos from '@/components/Galleryphotos.vue';
 import Footer from '@/components/Footer.vue';
 
 @Options({
   components: {
+    Header,
     Galleryheader,
     Galleryphotos,
     Footer

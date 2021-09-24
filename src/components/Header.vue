@@ -252,41 +252,38 @@ export default class Header extends Vue {
 
 #nav {
     @include flexRow();
-    //   position: fixed;
-    //   z-index: 1000;
-    width: 80%;
-    margin: 0 auto;
-    //   left: 50%;
-    //   transform: translate(-50%, 0);
-    padding: 40px;
-    line-height: 0.9rem;
-    letter-spacing: 2px;
-    background-color: #000;
-    a {
-        color: #ffffff;
-        margin-right: 15px;
-        text-decoration: none;
-        &.router-link-exact-active {
-        border-bottom: 1px solid #ffffff;
+        position: absolute;
+        z-index: 100;
+        width: 86%;
+        margin: 0px 40px;
+        padding: 50px;
+        background-color: transparent;
+        a {
+            color: #ffffff;
+            margin-right: 27px;
+            font-size: 13px;
+            text-decoration: none;
+            &.router-link-exact-active {
+                border-bottom: 1px solid #ffffff;
+            }
         }
-    }
 
-    #nav > .rightnav {
-        // display: flex;
-        // flex-direction: row;
-        font-size: 12px;
-    }
+        #nav > .rightnav {
+            // display: flex;
+            // flex-direction: row;
+            font-size: 12px;
+        }
 
-    .icon {
-        color: #fff;
-        background-color: #000;
-        font-size: 20px;
-        border: #000;
-    }
+        .icon {
+            color: #fff;
+            background-color: transparent;
+            font-size: 20px;
+            border: none;
+        }
 
-    .st0 {
-        fill:#FFFFFF;
-    }
+        .st0 {
+            fill:#FFFFFF;
+        }
 }
 
 </style>

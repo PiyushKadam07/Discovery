@@ -1,19 +1,21 @@
 <template>
-    <div class="ourworlds">
-        <Header />
-        <div class = "image-main">    
-            <div class = "images" v-for="items in bodycontent" :key="items.id">
-                <div class="image">
-                    <!-- <img class = "ourworldimg" v-bind:src="items.image"/> -->
-                    <!-- <p class = "description"> {{ items.image }}</p> -->
-                    <!-- <p class = "description1"> {{ items.desc1 }}</p>
-                    <p class = "description2"> {{ items.desc2 }}</p>-->
-                    <Image v-bind:itemlist="items" /> 
-                </div>
-            </div>
-        </div>
-        <Footer />
+  <div class="ourworlds">
+     <div class="main">
+      <Header />
     </div>
+    <div class = "image-main">    
+      <div class = "images" v-for="items in bodycontent" :key="items.id">
+        <div class="image">
+          <!-- <img class = "ourworldimg" v-bind:src="items.image"/> -->
+          <!-- <p class = "description"> {{ items.image }}</p> -->
+          <!-- <p class = "description1"> {{ items.desc1 }}</p>
+          <p class = "description2"> {{ items.desc2 }}</p>-->
+          <Image v-bind:itemlist="items" /> 
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </div>
 </template>
 
 <script lang="ts">
@@ -190,11 +192,14 @@ export default class OurWorlds extends Vue {
 
 <style lang="scss">
 
-.ourworlds {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+// .ourworlds {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+// }
+.main {
+  height: 230px;
 }
 
 body {
@@ -204,37 +209,38 @@ body {
 .image-main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 98%;
+    margin: 0 auto;
 }
 
 .images {
-    height: 215px;
-    width: 230px;
+    height: 350px;
+    // width: 230px;
 }
 
 .image {
-    height: 215px;
-    width: 230px;
+    // height: 215px;
+    // width: 230px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 img {
-    height: 120px;
-    width: 230px;
+    // height: 120px;
+    width: 100%;
 }
 
 .description {
     font-size: 14px;
     color: #fff;
-    margin: 3px;
-    float: left;
+    margin-top: 8px;
 }
 
 .description1 {
     font-size: 14px;
     color: #777;
-    margin: 3px;
-    float: left;
+    margin-top: 8px;
 }
 </style>
