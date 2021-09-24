@@ -1,0 +1,32 @@
+.DS_Store
+node_modules
+/dist
+images_gallery.txt
+Galleryheader.vue
+Galleryphotos.vue
+Homepage.vue
+About.vue
+Experience.vue
+Gallery.vue
+Home.vue
+Press.vue
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
