@@ -1,15 +1,12 @@
 .DS_Store
 node_modules
 /dist
-images_gallery.txt
-Galleryheader.vue
-Galleryphotos.vue
 Homepage.vue
 About.vue
 Experience.vue
-Gallery.vue
 Home.vue
 Press.vue
+
 
 
 # local env files
