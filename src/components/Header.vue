@@ -228,65 +228,50 @@
             <router-link to="/press">Press</router-link>
             <button class="icon">☰</button>
         </div>
-        <!-- <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> -->
     </div>
 </template>
 
 <script lang="ts">
 import { Vue } from 'vue-class-component';
-
 export default class Header extends Vue {
 }
-
 </script>
 
 <style lang="scss">
-
 @mixin flexRow() {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
 #nav {
     @include flexRow();
-    //   position: fixed;
-    //   z-index: 1000;
-    width: 80%;
-    margin: 0 auto;
-    //   left: 50%;
-    //   transform: translate(-50%, 0);
-    padding: 40px;
-    line-height: 0.9rem;
-    letter-spacing: 2px;
-    background-color: #000;
-    a {
-        color: #ffffff;
-        margin-right: 15px;
-        text-decoration: none;
-        &.router-link-exact-active {
-        border-bottom: 1px solid #ffffff;
+        position: absolute;
+        z-index: 100;
+        width: 86%;
+        margin: 0px 40px;
+        padding: 50px;
+        background-color: transparent;
+        a {
+            color: #ffffff;
+            margin-right: 27px;
+            font-size: 13px;
+            text-decoration: none;
+            &.router-link-exact-active {
+                border-bottom: 1px solid #ffffff;
+            }
         }
-    }
-
-    #nav > .rightnav {
-        // display: flex;
-        // flex-direction: row;
-        font-size: 12px;
-    }
-
-    .icon {
-        color: #fff;
-        background-color: #000;
-        font-size: 20px;
-        border: #000;
-    }
-
-    .st0 {
-        fill:#FFFFFF;
-    }
+        #nav > .rightnav {
+            font-size: 12px;
+        }
+        .icon {
+            color: #fff;
+            background-color: transparent;
+            font-size: 20px;
+            border: none;
+        }
+        .st0 {
+            fill:#FFFFFF;
+        }
 }
-
 </style>
