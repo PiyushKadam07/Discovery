@@ -228,8 +228,6 @@
             <router-link to="/press">Press</router-link>
             <button class="icon">☰</button>
         </div>
-        <!-- <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> -->
     </div>
 </template>
 
@@ -269,8 +267,6 @@ export default class Header extends Vue {
         }
 
         #nav > .rightnav {
-            // display: flex;
-            // flex-direction: row;
             font-size: 12px;
         }
 

@@ -232,8 +232,6 @@ export default class Footer extends Vue {
         width: 100%;
         left: 0;
         background-color: #161f1e;
-        // z-index: -1;
-        // padding: 5%;
     }
     footer{
         display: flex;

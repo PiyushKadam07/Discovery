@@ -1,10 +1,5 @@
 <template>
     <div class="ourworldimage">
-        <!-- <img
-          class="gallery-head"
-          src="https://dxaurk9yhilm4.cloudfront.net/images/8812/DJI_0265_RET_2_210405_212842_d169f13de117664acdaa1543841b7c16.jpg"
-        /> -->
-        
         <img :src="itemlist.image" />
         <span class = "description"> {{ itemlist.desc1 }}</span>
         <span class = "description1"> {{ itemlist.desc2 }}</span> 
