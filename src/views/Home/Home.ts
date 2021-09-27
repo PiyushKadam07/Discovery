@@ -1,36 +1,21 @@
-<template>
-  <div class="ourworlds">
-     <div class="main">
-      <Header />
-    </div>
-    <div class = "image-main">    
-      <div class = "images" v-for="items in bodycontent" :key="items.id">
-        <div class="image">
-          <!-- <img class = "ourworldimg" v-bind:src="items.image"/> -->
-          <!-- <p class = "description1"> {{ items.desc1 }}</p>
-          <p class = "description2"> {{ items.desc2 }}</p>-->
-          <Image v-bind:itemlist="items" /> 
-        </div>
-      </div>
-    </div>
-    <Footer />
-  </div>
-</template>
-
-<script lang="ts">
+import "./Home.scss";
 import { Options, Vue } from 'vue-class-component';
-import Header from '@/components/Header.vue';
-import Image from '@/components/Imagegallery.vue';
-import Footer from '@/components/Footer.vue';
+import Header from '@/components/Header/Header.vue'; // @ is an alias to /src
+import Footer from '@/components/Footer/Footer.vue'; // @ is an alias to /src
+import Homepage from '@/components/Home/Homepage.vue'; // @ is an alias to /src
+import Carousel from '@/components/Carousel/Carousel.vue';
+
 @Options({
-    components: {
-        Header,
-        Image,
-        Footer
-    },
+  components: {
+    Header,
+    Homepage,
+    Carousel,
+    Footer
+  },
 })
-export default class OurWorlds extends Vue {
-    bodycontent = [
+
+export default class Home extends Vue {
+  bodycontent = [
         {
           id : 1,
           image: "https://dxaurk9yhilm4.cloudfront.net/images/8812/DJI_0265_RET_2_210405_212842_d169f13de117664acdaa1543841b7c16.jpg",
@@ -183,41 +168,3 @@ export default class OurWorlds extends Vue {
         },
     ]
 }
-</script>
-
-<style lang="scss">
-.main {
-  height: 230px;
-}
-body {
-    background-color: #000;
-}
-.image-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-    width: 98%;
-    margin: 0 auto;
-}
-.images {
-    height: 350px;
-}
-.image {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-img {
-    width: 100%;
-}
-.description {
-    font-size: 14px;
-    color: #fff;
-    margin-top: 8px;
-}
-.description1 {
-    font-size: 14px;
-    color: #777;
-    margin-top: 8px;
-}
-</style>

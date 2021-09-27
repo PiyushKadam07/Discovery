@@ -1,14 +1,6 @@
 .DS_Store
-node_modules
+/node_modules
 /dist
-About.vue
-Experiences.vue
-Press.vue
-/Header
-/Footer
-/Gallery
-/Home
-/Ourworlds
 
 # local env files
 .env.local
