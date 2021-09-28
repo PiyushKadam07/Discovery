@@ -106,8 +106,14 @@ body {
   }
   
   .welcomeimg {
-    width: 100%;
-    height: 77%;
+    width: 110%;
+    height: 85%;
+    margin-left: -10px;
+  }
+
+  .welcomeimg1 {
+    width: 113%;
+    height: 78%;
   }
   
   .content2 {
@@ -120,31 +126,22 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     height: 180px;
   }
-  
-  // .titleheader {
-  //   height: 180px;
-  // }
   
   .navarrows {
     display: flex;
     height: 100px;
     align-items: center;
-    // position: relative;
-    // z-index: 5;
   }
   
   .arrowbtn {
     --s: 4rem;
-    // position: relative;
     width: var(--s);
     height: var(--s);
     border-radius: 50%;
     background-color: #fff;
     transition: background-color .75s cubic-bezier(.19,1,.22,1);
-    // z-index: 3;
     border: none;
     outline: none;
     box-shadow: 2px 1px 2px 1px lightgrey;
@@ -155,7 +152,6 @@ body {
   }
   
   .locationbtn {
-      // position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
@@ -174,7 +170,6 @@ body {
   }
   
   .prevbtn {
-    // position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -187,6 +182,12 @@ body {
     transform: scaleX(-1);
   }
   
+  .content3 {
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+  }
+
   .content4 {
     height: 100%;
     width: 100%;

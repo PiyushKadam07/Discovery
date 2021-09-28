@@ -35,7 +35,7 @@
           <img class="welcomeimg" src="https://dxaurk9yhilm4.cloudfront.net/images/27/DriftwoodDevelopment_JessicaJohnson_March2019_52_df8586bb4c14d18f77324f7452f392cd.jpg">
         </div>
         <div class="rightcolumn">
-          <img class="welcomeimg" src="https://dxaurk9yhilm4.cloudfront.net/images/275/Home_76fe09b415dcada4f46ba4114338562c.jpg">
+          <img class="welcomeimg1" src="https://dxaurk9yhilm4.cloudfront.net/images/275/Home_76fe09b415dcada4f46ba4114338562c.jpg">
         </div>
       </div>
     </div>
@@ -71,6 +71,8 @@
       </div>
     </div>
     <div class="content3">
+      <div class="lands">
+      </div>
     </div>
     <div class="content4">
       <div class="imgcontents">
