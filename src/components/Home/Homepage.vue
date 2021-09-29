@@ -1,3 +1,4 @@
+// globe section lands of discovery
 <template>
   <div class="home">
     
