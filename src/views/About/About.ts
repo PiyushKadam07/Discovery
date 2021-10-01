@@ -7,10 +7,12 @@ import Carousel from '@/components/Carousel/Carousel.vue';
 import Headertext from "@/components/Headertext/Headertext.vue";
 import Background_Image from "@/components/Background_Image/Background_Image.vue";
 import Textimage from "@/components/Textimage/Textimage.vue";
+import Text1image from "@/components/Text1image/Text1image.vue";
 
 @Options({
   components: {
     Header,
+    Text1image,
     Carouselheader,
     Carousel,
     Headertext,
@@ -55,6 +57,11 @@ export default class About extends Vue {
     ]
 
   content1 = `<p>Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.</p>`
+
+  content2title = "Our Mission"
+  content2para1 = `<p>We don’t build buildings, but rather we build settings where families can create intergenerational memories and enrich their lives in exquisite and untouched sanctuaries. Everything we do is driven by the fundamental desire to create spaces where families can be together.</p>`
+  content2para2 = `<p>These settings offer a relaxed and comfortable sense of community featuring outstanding clubhouses, incredible residential offerings, premier golf courses, welcoming staff, world-class culinary offerings and our custom Outdoor Pursuits program; all offering the highest of service standards to enrich your experience. </p>`
+  content2url = "https://dxaurk9yhilm4.cloudfront.net/images/163/What_we_do_intro_5ae402c9837860cd6e4f65e304b3a5fa.jpg"
 
   content4text1 = "The Discovery Difference"
   content4text2 = " "

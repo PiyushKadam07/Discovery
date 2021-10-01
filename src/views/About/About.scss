@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #fff;
 }
 
 .aboutheader {
@@ -48,83 +49,6 @@ body {
     @media screen and (max-width: 768px) {
         .imgtitle {
             font-size: 40px;
-        }
-    }
-}
-
-.content2 {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    text-align: left;
-
-    .leftcolumn, .rightcolumn {
-        width: 50%;
-    }
-
-    .leftcolumn {
-        margin: 10% auto;
-        width: 40%;
-
-        .left_title {
-            height: 55px;
-        }
-
-        .title {
-            font-size: 40px;
-            font-family: gt-sectra;
-        }
-
-        .left_txt {
-            font-size: 17px;
-            font-family: messina sans;
-            color: #777;
-            line-height: 35px;
-        }
-    }
-
-    .rightcolumn img {
-        width: 100%;
-        height: 100%;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 90%;
-    }
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-
-        .leftcolumn {
-            width: 60%;
-
-            .left_txt {
-                font-size: 15px;
-                line-height: 27px;
-            }
-        }
-        
-        .rightcolumn {
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        
-        .leftcolumn {
-            width: 70%;
-
-            .left_txt {
-                font-size: 13px;
-                line-height: 23px;
-            }
-        }
-        
-        .rightcolumn {
-            width: 90%;
-            margin: 0 auto;
         }
     }
 }
