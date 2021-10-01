@@ -36,3 +36,37 @@
     white-space: normal;
     color: #ffffffbf;
 }
+
+@media screen and (max-width: 768px){
+    .carousel {
+        width: 45vw;
+        height: 53vh;
+    }
+
+    .imgcontent {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .description1 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .carousel {
+        width: 98vw;
+    }
+
+    .description {
+        font-size: 30px;
+    }
+
+    .description1 {
+        font-size: 15px;
+    }
+}

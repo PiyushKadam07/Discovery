@@ -1,6 +1,5 @@
 @mixin flexRow() {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -33,4 +32,14 @@
         .st0 {
             fill:#FFFFFF;
         }
+}
+
+@media screen and (max-width: 768px) {
+    #nav {
+        width: 50%;
+    }
+
+    .rightnav {
+        display: none;
+    }
 }

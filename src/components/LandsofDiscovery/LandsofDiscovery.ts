@@ -1,22 +1,9 @@
-import "./Home.scss";
 import { Options, Vue } from 'vue-class-component';
-import Header from '@/components/Header/Header.vue'; // @ is an alias to /src
-import Footer from '@/components/Footer/Footer.vue'; // @ is an alias to /src
-import Homevideo from '@/components/Homevideo/Homevideo.vue'; // @ is an alias to /src
-import Carousel from '@/components/Carousel/Carousel.vue';
-import LandsofDiscovery from '@/components/LandsofDiscovery/LandsofDiscovery.vue';
 
 @Options({
-  components: {
-    Header,
-    Homevideo,
-    Carousel,
-    LandsofDiscovery,
-    Footer
-  },
 })
 
-export default class Home extends Vue {
+export default class LandsofDiscovery extends Vue {
     bodycontent = [
         {
           id : 1,
@@ -269,4 +256,23 @@ export default class Home extends Vue {
           wind_dir: "112°",
         },
     ];
+
+  content = '';
+  selectedValue = this.bodycontent[0];
+
+  leftmeth(e: number): void {
+    if ( e != 1 ) {
+      const data = (e-2) % this.bodycontent.length;
+      this.selectedValue = this.bodycontent[data];
+    }
+    else {
+      const data = this.bodycontent.length - 1;
+      this.selectedValue = this.bodycontent[data];
+    }  
+  }
+
+  rightmeth(e: number): void {
+    const data = (e) % this.bodycontent.length;
+    this.selectedValue = this.bodycontent[data];  
+  }
 }
