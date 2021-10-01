@@ -30,6 +30,8 @@
                 font-size: 17px;
                 color: #777;
                 line-height: 30px;
+                width: 90%;
+                margin-right: 8%
             }
         }
 
@@ -41,5 +43,45 @@
                 width: 100%;
             }
         }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 95%;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 150vh;
+        flex-direction: column-reverse;
+
+        .leftcolumn {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .rightcolumn {
+            width: 60%;
+            margin: 7% auto;
+
+            .right_top {
+
+                .title {
+                    font-size: 30px;
+                    height: 70px;
+                }
+    
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+
+            .right_bottom {
+                margin: 13% 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 120vh;
     }
 }

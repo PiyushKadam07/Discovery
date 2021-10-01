@@ -2,6 +2,7 @@ import "./About.scss";
 import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header/Header.vue'; // @ is an alias to /src
 import Footer from '@/components/Footer/Footer.vue'; // @ is an alias to /src
+import Carouselheader from "@/components/Carouselheader/Carouselheader.vue";
 import Carousel from '@/components/Carousel/Carousel.vue';
 import Headertext from "@/components/Headertext/Headertext.vue";
 import Background_Image from "@/components/Background_Image/Background_Image.vue";
@@ -10,6 +11,7 @@ import Textimage from "@/components/Textimage/Textimage.vue";
 @Options({
   components: {
     Header,
+    Carouselheader,
     Carousel,
     Headertext,
     Background_Image,
@@ -52,7 +54,10 @@ export default class About extends Vue {
         }
     ]
 
-  content1 = `<p>Founded in 1994 by Mike Meldman, Discovery Land Company is a <br> US-based real estate developer and operator of private residential <br> club communities and resorts with a world-renowned portfolio of <br> domestic and international properties.</p>`
+  content1 = `<p>Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.</p>`
+
+  content4text1 = "The Discovery Difference"
+  content4text2 = " "
 
   content5url = "https://dxaurk9yhilm4.cloudfront.net/images/159/What_we_do_design_hero_62018727b9e8103a3d5d6c0701991eca.jpg"
 
@@ -60,13 +65,13 @@ export default class About extends Vue {
 
   content6lefturl = "https://dxaurk9yhilm4.cloudfront.net/images/157/What_we_do_design_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg"
   content6title = "Discovery Design"
-  content6para = `<p>See the beauty in every corner of your new, bespoke <br> home away from home. From fabrics and furniture <br> pieces to floorplans, our professional designers will <br> collaborate closely with you to create an interior living <br> space which reflects your style and unique tastes as <br> well as perfectly complementing your lifestyle.</p>`
+  content6para = `<p>See the beauty in every corner of your new, bespoke home away from home. From fabrics and furniture pieces to floorplans, our professional designers will collaborate closely with you to create an interior living space which reflects your style and unique tastes as well as perfectly complementing your lifestyle.</p>`
   content6righturl = "https://dxaurk9yhilm4.cloudfront.net/images/158/What_we_do_design_2_2ab4534b0a2984e07d7caeca8808129f.jpg"
   content6 = true;
 
   content8righturl = "https://dxaurk9yhilm4.cloudfront.net/images/155/What_we_do_builders_2_2ab4534b0a2984e07d7caeca8808129f.jpg"
   content8title = "Discovery Builders"
-  content8para = `<p>Every Discovery property is wonderfully in-tune with its <br> natural surroundings - a harmonious blend of the <br> architecturally impressive with the environmentally <br> sensitive. And your every expectation will be met, with <br> our meticulous eye for detail matching outstanding <br> levels of craftsmanship and master building.</p>`
+  content8para = `<p>Every Discovery property is wonderfully in-tune with its natural surroundings - a harmonious blend of the architecturally impressive with the environmentally sensitive. And your every expectation will be met, with our meticulous eye for detail matching outstanding levels of craftsmanship and master building.</p>`
   content8lefturl = "https://dxaurk9yhilm4.cloudfront.net/images/153/What_we_do_builders_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg"
   content8 = false;
 }

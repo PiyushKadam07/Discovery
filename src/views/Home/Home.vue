@@ -11,13 +11,7 @@
           </div>
           <div>
             <p>
-              <div class="para">Discover the unique atmosphere of our private </div>
-              <div class="para">residential club communities. Once experienced. Never </div>
-              <div class="para">forgotten. This is classic, comfortable, modern living in </div>
-              <div class="para">nature’s most spectacular settings worldwide. </div>
-              <div class="para">Reassuringly exclusive. Generously welcoming. Find </div>
-              <div class="para">your unique world – a place where families love to be; </div>
-              <div class="para">creating unforgettable moments, together. </div>
+              <div class="para">Discover the unique atmosphere of our private residential club communities. Once experienced. Never forgotten. This is classic, comfortable, modern living in nature’s most spectacular settings worldwide. Reassuringly exclusive. Generously welcoming. Find your unique world – a place where families love to be; creating unforgettable moments, together. </div>
             <!-- eslint-disable-next-line vue/no-parsing-error -->
             </p>
           </div>
@@ -31,28 +25,7 @@
       </div>
     </div>
     <div class="content2">
-      <div class="navbar">
-        <div class="titleheader">
-          <div class="text1">Explore</div>
-          <div class="text2">our worlds</div>
-        </div>
-        <nav class="navarrows">
-          <button type="button" class="arrowbtn">
-            <div class="prevbtn">
-              <div class="locationbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.06 20.91"><path d="M28.06 9.81H2.2l8.89-8.9c.01-.03-.9-.91-.9-.91l-10 10c0 .01-.01.01-.02.02l-.04.04c-.01.01-.02.02-.02.03-.01.01-.02.03-.03.05-.01.01-.01.03-.02.04 0 .01-.01.02-.01.03v.02c-.01.01-.01.03-.01.04 0 .02-.01.03-.01.05 0 .01 0 .03-.01.04 0 .02 0 .03-.01.05v.1c0 .02 0 .03.01.05 0 .01 0 .03.01.04 0 .02.01.03.01.05 0 .01.01.03.01.04 0 .01 0 .01.01.02 0 .01.01.02.02.03.01.01.01.03.02.04.01.02.02.03.03.05.01.01.02.02.02.03.01.01.02.03.04.04l.02.02 10 10c0 .01.91-.91.91-.91L2.2 11.1h25.86V9.81z"></path></svg>
-              </div>
-            </div>
-          </button>
-          <button type="button" class="arrowbtn">
-            <div class="nextbtn">
-              <div class="locationbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.06 20.91"><path d="M28.06 9.81H2.2l8.89-8.9c.01-.03-.9-.91-.9-.91l-10 10c0 .01-.01.01-.02.02l-.04.04c-.01.01-.02.02-.02.03-.01.01-.02.03-.03.05-.01.01-.01.03-.02.04 0 .01-.01.02-.01.03v.02c-.01.01-.01.03-.01.04 0 .02-.01.03-.01.05 0 .01 0 .03-.01.04 0 .02 0 .03-.01.05v.1c0 .02 0 .03.01.05 0 .01 0 .03.01.04 0 .02.01.03.01.05 0 .01.01.03.01.04 0 .01 0 .01.01.02 0 .01.01.02.02.03.01.01.01.03.02.04.01.02.02.03.03.05.01.01.02.02.02.03.01.01.02.03.04.04l.02.02 10 10c0 .01.91-.91.91-.91L2.2 11.1h25.86V9.81z"></path></svg>
-              </div>
-            </div>
-          </button>
-        </nav>
-      </div>
+      <Carouselheader v-bind:title1="content2text1" :title2="content2text2"/>
       <div class="slider">
         <div class="slide-track" v-for="items in bodycontent" :key="items.id">
           <div class="slide">

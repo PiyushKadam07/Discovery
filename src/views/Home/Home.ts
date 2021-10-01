@@ -3,6 +3,7 @@ import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header/Header.vue'; // @ is an alias to /src
 import Footer from '@/components/Footer/Footer.vue'; // @ is an alias to /src
 import Homevideo from '@/components/Homevideo/Homevideo.vue'; // @ is an alias to /src
+import Carouselheader from '@/components/Carouselheader/Carouselheader.vue';
 import Carousel from '@/components/Carousel/Carousel.vue';
 import LandsofDiscovery from '@/components/LandsofDiscovery/LandsofDiscovery.vue';
 
@@ -10,6 +11,7 @@ import LandsofDiscovery from '@/components/LandsofDiscovery/LandsofDiscovery.vue
   components: {
     Header,
     Homevideo,
+    Carouselheader,
     Carousel,
     LandsofDiscovery,
     Footer
@@ -269,4 +271,7 @@ export default class Home extends Vue {
           wind_dir: "112°",
         },
     ];
+
+    content2text1 = "Explore";
+    content2text2 = "our worlds";
 }
