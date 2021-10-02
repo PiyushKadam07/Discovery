@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer.vue'; // @ is an alias to /src
 import Carouselheader from "@/components/Carouselheader/Carouselheader.vue";
 import Carousel from '@/components/Carousel/Carousel.vue';
 import Headertext from "@/components/Headertext/Headertext.vue";
+import Aboutimage from "@/components/Aboutimage/Aboutimage.vue";
 import Background_Image from "@/components/Background_Image/Background_Image.vue";
 import Textimage from "@/components/Textimage/Textimage.vue";
 import Text1image from "@/components/Text1image/Text1image.vue";
@@ -13,6 +14,7 @@ import Ourworldsfooter from "@/components/Ourworldsfooter/Ourworldsfooter.vue";
 @Options({
   components: {
     Header,
+    Aboutimage,
     Text1image,
     Carouselheader,
     Carousel,
@@ -56,7 +58,11 @@ export default class About extends Vue {
           desc1: "Luxury bespoke homes",
           desc2: "Through our in-house services, Discovery Builders and Discovery Design, we offer turn-key homes for families that embody modern aesthetics while staying true to classic principles.",
         }
-    ]
+    ];
+
+  headerurl = "https://dxaurk9yhilm4.cloudfront.net/images/806/YC-DSC_0007-2_2cbd80a0345be3b5a0b7649a1a2d057f.jpg";
+  headertitle1 = "Creating your";
+  headertitle2 = "perfect world";
 
   content1 = `<p>Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.</p>`;
 

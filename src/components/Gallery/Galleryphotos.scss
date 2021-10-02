@@ -1,21 +1,21 @@
-.gallery-photo{
+.gallery-photo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.photos{
+.photos {
     overflow: hidden;
     margin: 0;
 }
 
-.photos img{
+.photos img {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
-h1{
+h1 {
     font-family: gt-sectra;
     font-weight: 200;
     text-align: center;

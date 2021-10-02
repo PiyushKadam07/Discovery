@@ -1,3 +1,4 @@
+// This component shows footer section on all pages
 <template>
     <div class="footer-div">
         <footer>

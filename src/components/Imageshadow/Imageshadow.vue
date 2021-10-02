@@ -1,3 +1,4 @@
+// This component shows image with description and box-shadow in experience page
 <template>
     <div class="imageshadow" v-if="check">
         <div class="leftcolumn" style="height: 100%; box-shadow: 85px 150px #ceb7b7;">

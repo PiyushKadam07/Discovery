@@ -1,3 +1,4 @@
+// This component shows globe background image with place image, location & weather details with forward & backward buttons in home page
 <template>
     <div class="lands-of-discovery">
       <div class="lands">

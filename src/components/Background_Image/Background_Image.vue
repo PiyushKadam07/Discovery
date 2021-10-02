@@ -1,3 +1,4 @@
+// This component shows complete image section part in about-dlc page
 <template>
     <div class="background_image">
         <img :src="url">

@@ -1,3 +1,4 @@
+// This component shows left side title & description & right side single image section in about-dlc & experience page
 <template>
     <div class="text_image">
         <div class="leftcolumn">

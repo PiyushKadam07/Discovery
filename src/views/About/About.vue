@@ -1,16 +1,8 @@
 <template>
   <div class="about">
     <Header />
-    
-    <div class="aboutheader">
-      <div class="imgbg">
-        <img src="https://dxaurk9yhilm4.cloudfront.net/images/806/YC-DSC_0007-2_2cbd80a0345be3b5a0b7649a1a2d057f.jpg">
-      </div>
-      <div class="imgtitle">
-        <div class="imgtext">Creating your</div>
-        <div class="imgtext1">perfect world</div>
-      </div>
-    </div>
+
+    <Aboutimage  v-bind:title1="headertitle1" :title2="headertitle2" :url="headerurl" />
     
     <Headertext v-bind:title="content1" />
 
@@ -40,12 +32,7 @@
     <Textimage v-bind:lefturl="content8lefturl" :righturl="content8righturl" :title="content8title" :para="content8para" :flag="content8" />
     
     <Ourworldsfooter v-bind:url="content9url" />
-    <!-- <div class="content9">
-      <img src="https://dxaurk9yhilm4.cloudfront.net/images/160/What_we_do_footer_2_5dabbd1a34149dcaed83515ff1526a0f.jpg">
-      <div class="imgtext">
-        <span class="text">Our Worlds</span>
-      </div>
-    </div> -->
+    
     <Footer />
   </div>
 </template>

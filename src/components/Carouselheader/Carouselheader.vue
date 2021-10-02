@@ -1,3 +1,4 @@
+// This component shows carousel header part with forward & backward buttons in home page and about-dlc page
 <template>
     <div class="navbar">
         <div class="titleheader">

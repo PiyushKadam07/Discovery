@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 #nav {
     @include flexRow();
         position: absolute;
@@ -11,6 +12,7 @@
         margin: 0px 40px;
         padding: 50px;
         background-color: transparent;
+
         a {
             color: #ffffff;
             margin-right: 27px;
@@ -20,15 +22,18 @@
                 border-bottom: 1px solid #ffffff;
             }
         }
+
         #nav > .rightnav {
             font-size: 12px;
         }
+
         .icon {
             color: #fff;
             background-color: transparent;
             font-size: 20px;
             border: none;
         }
+        
         .st0 {
             fill:#FFFFFF;
         }

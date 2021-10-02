@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <Header />
+
     <Homevideo :text1="videotext1" :text2="videotext2"/>
+
     <div class="content1bg">
       <div class="content1">
         <div class="leftcolumn">
@@ -24,6 +26,7 @@
         </div>
       </div>
     </div>
+
     <div class="content2">
       <Carouselheader v-bind:title1="content2text1" :title2="content2text2"/>
       <div class="slider">
@@ -34,7 +37,9 @@
         </div>
       </div>
     </div>
+
     <LandsofDiscovery />
+
     <div class="content4">
       <div class="imgcontents">
         <div class="img-content4"> 
@@ -51,6 +56,7 @@
         </div>
       </div>
     </div>
+    
     <Footer />
   </div>
 </template>

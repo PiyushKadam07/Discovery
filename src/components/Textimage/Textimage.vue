@@ -1,3 +1,4 @@
+// This component shows left side title & description with image & right side only image section in about-dlc page
 <template>
     <div class="textimage" v-if="flag">
         <div class="leftcolumn">

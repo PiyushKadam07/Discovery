@@ -1,4 +1,4 @@
-// homepage video
+// This component shows background video with title in home page and experience page
 <template>
   <div class="video-container">
       <video autoplay muted loop>

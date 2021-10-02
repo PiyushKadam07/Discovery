@@ -1,3 +1,4 @@
+// This component shows image section with title above footer in about-dlc and experience page
 <template>
     <div class="ourworldsfooter">
         <img :src="url">

@@ -1,3 +1,4 @@
+// This component shows header section on all pages
 <template>
     <div id="nav">
         <div class = "leftnav"> 

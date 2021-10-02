@@ -1,3 +1,4 @@
+// This component shows images section in gallery page
 <template>
     <div class="gallery-photo">
         <div class="photo-frame">

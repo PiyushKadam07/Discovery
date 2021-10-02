@@ -11,6 +11,7 @@ import Footer from '@/components/Footer/Footer.vue';
         Footer
     },
 })
+
 export default class OurWorlds extends Vue {
     bodycontent = [
         {
@@ -163,5 +164,5 @@ export default class OurWorlds extends Vue {
           desc1: "ESTANCIA",
           desc2: "Scottsdale, Arizona",
         },
-    ]
+    ];
 }

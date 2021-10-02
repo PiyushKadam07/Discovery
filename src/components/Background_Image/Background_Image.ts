@@ -3,7 +3,7 @@ import { Options, Vue } from 'vue-class-component';
 @Options({
     props: {
         url : {
-        type : String
+            type : String
         },
     },
 })

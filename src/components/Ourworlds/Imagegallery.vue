@@ -1,3 +1,4 @@
+// This component shows images with location section in ourworlds page
 <template>
     <div class="ourworldimage">
         <img :src="itemlist.image" />

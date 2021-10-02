@@ -7,14 +7,14 @@ body {
     fill: #ffffff;
 }
 
-.footer-div{
+.footer-div {
     position: absolute;
     width: 100%;
     left: 0;
     background-color: #161f1e;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,7 +25,7 @@ footer{
     text-align: left;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,7 +38,7 @@ svg {
     margin-top: 1%;
 }
 
-.footer-navigation{
+.footer-navigation {
     display: flex;
     flex-direction: row;
     flex-basis: 50%;
@@ -46,11 +46,11 @@ svg {
     align-items: flex-start;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-li{
+li {
     padding: 6px;
     line-height: 0.9;
     color: #fff;
@@ -76,7 +76,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-    .footer-content{
+    .footer-content {
         flex-direction: column;
     }
 

@@ -3,56 +3,6 @@ body {
     background-color: #fff;
 }
 
-.aboutheader {
-    width: 100%;
-    height: 100%;
-
-    .imgbg {
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .imgtitle {
-        z-index: 100;
-        position: absolute;
-        color: #fff;
-        bottom: 40%;
-        left: 20%;
-        text-align: left;
-        font-family: gt-sectra;
-        font-size: 60px;
-        width: 60%;
-    }
-
-    .imgtext {
-        letter-spacing: 1px;
-    } 
-
-    .imgtext1 {
-        letter-spacing: 4px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 100%;
-        height: 90vh;
-
-        .imgtitle {
-            position: absolute;
-            bottom: 50%;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        .imgtitle {
-            font-size: 40px;
-        }
-    }
-}
-
 .content3 {
     height: 100%;
     width: 95%;
@@ -117,36 +67,3 @@ body {
     }
 }
 
-// .content9 {
-//     width: 100%;
-//     margin-bottom: -5%;
-//     margin-top: 10%;
-//     height: 75vh;
-
-//     img {
-//         height: 100%;
-//         width: 100%;
-//     }
-
-//     .imgtext {
-//         position: relative;
-//         z-index: 2;
-//         bottom: 22rem;
-//         color: #fff;
-//         font-size: 42px;
-//         font-family: gotham;
-//     }
-
-//     @media screen and (max-width: 1024px) {
-//         height: 65vh;
-//         .imgtext {
-//             bottom: 60%;
-//         }
-//     }
-
-//     @media screen and (max-width: 768px) {
-//         .imgtext {
-//             font-size: 35px;
-//         }
-//     }
-// }

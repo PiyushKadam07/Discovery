@@ -24,6 +24,22 @@ body {
     }    
 }
 
+img {
+    width: 100%;
+}
+
+.description {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.description1 {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+}
+
 @media screen and (max-width: 1024px) {
     .image-main {
         grid-template-columns: auto auto auto;
@@ -48,36 +64,17 @@ body {
         grid-gap: 10px;
         width: 100%;
     }
-
-    .images {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .image-main {
         grid-template-columns: auto;
+
+        .images {
+            height: 280px;
+        }
     }
-
-    .images {
-        width: 100%;
-    }
 }
 
-img {
-    width: 100%;
-}
-
-.description {
-    font-size: 14px;
-    color: #fff;
-    margin-top: 8px;
-}
-
-.description1 {
-    font-size: 14px;
-    color: #777;
-    margin-top: 8px;
-}
 
 

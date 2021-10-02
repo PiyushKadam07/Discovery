@@ -1,3 +1,4 @@
+// This component shows carousel part with title and description on home page and about-dlc page
 <template>
     <div class="carouselcontent">
         <div class="carousel">

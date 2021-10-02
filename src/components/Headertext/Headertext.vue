@@ -1,3 +1,4 @@
+// This component shows paragraph section in about-dlc & experience page
 <template>
     <div class="headertext">
         <p v-html="title"></p>
