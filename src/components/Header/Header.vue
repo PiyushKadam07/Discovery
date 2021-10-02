@@ -220,15 +220,10 @@
                 </g>
             </svg>
         </div>
-        <div class = "rightnav"> 
-            <router-link to="/"></router-link>
-            <router-link to="/about-dlc">About DLC</router-link>
-            <router-link to="/our-worlds">Our Worlds</router-link>
-            <router-link to="/experiences">Experiences</router-link>
-            <router-link to="/gallery">Gallery</router-link>
-            <router-link to="/press">Press</router-link>
-            <button class="icon">☰</button>
+        <div class = "rightnav" v-for="route in routes" v-bind:key="route.path">
+            <router-link :to="route.to" v-text="route.path"></router-link> 
         </div>
+        <button class="icon">☰</button>
     </div>
 </template>
 

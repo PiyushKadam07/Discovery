@@ -186,29 +186,22 @@
                 </svg>
                 <div class="footer-navigation">
                     <ul>
-                        <li><p>GET IN TOUCH</p></li>
-                        <li>(480) 624-5200</li>
-                        <li><u>mail@discoverylandco.com</u></li>
+                        <li v-html="contact[0]"></li>
+                        <li v-html="contact[1]"></li>
+                        <li v-html="contact[2]"></li>
                     </ul>
                     <ul>
-                        <li><router-link to="/about-dlc">About DLC</router-link></li>
-                        <li><router-link to="/our-worlds">Our Worlds</router-link></li>
-                        <li><router-link to="/experiences">Experiences</router-link></li>
-                        <li><router-link to="/gallery">Gallery</router-link></li>
-                        <li><router-link to="/press">Press</router-link></li>
-                        <router-view/>
+                        <li v-for="route in routes" v-bind:key="route.path">
+                            <router-link :to="route.to" v-text="route.path"></router-link> 
+                        </li>
+                        <router-view />
                     </ul>
                     <ul>
-                        <li>Magazine</li>
-                        <li>Careers</li>
-                        <li>Foundation</li>
-                        <li>Company</li>
-                        <li>Contact</li>
-                        <li>Privacy</li>
+                        <li v-for="path in otherroutes" v-bind:key="path" v-text="path"></li>
                     </ul>
                 </div>
             </div>
-            <p>© Discovery Land Company. All rights reserved.</p>
+            <p v-text="copyright"></p>
         </footer>
     </div>
 </template>

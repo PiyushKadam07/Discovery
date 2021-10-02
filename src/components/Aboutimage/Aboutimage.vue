@@ -1,4 +1,4 @@
-// This component shows background image with title on it
+// This component shows background image with title on it in about & press page
 <template>
     <div class="aboutimage">
         <div class="imgbg">
