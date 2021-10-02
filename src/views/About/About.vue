@@ -13,7 +13,7 @@
     </div>
     
     <Headertext v-bind:title="content1" />
-    
+
     <Text1image v-bind:title="content2title" :para1="content2para1" :para2="content2para2" :url="content2url" />
     
     <div class="content3">
@@ -39,12 +39,13 @@
     
     <Textimage v-bind:lefturl="content8lefturl" :righturl="content8righturl" :title="content8title" :para="content8para" :flag="content8" />
     
-    <div class="content9">
+    <Ourworldsfooter v-bind:url="content9url" />
+    <!-- <div class="content9">
       <img src="https://dxaurk9yhilm4.cloudfront.net/images/160/What_we_do_footer_2_5dabbd1a34149dcaed83515ff1526a0f.jpg">
       <div class="imgtext">
         <span class="text">Our Worlds</span>
       </div>
-    </div>
+    </div> -->
     <Footer />
   </div>
 </template>

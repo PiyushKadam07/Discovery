@@ -8,6 +8,7 @@ import Headertext from "@/components/Headertext/Headertext.vue";
 import Background_Image from "@/components/Background_Image/Background_Image.vue";
 import Textimage from "@/components/Textimage/Textimage.vue";
 import Text1image from "@/components/Text1image/Text1image.vue";
+import Ourworldsfooter from "@/components/Ourworldsfooter/Ourworldsfooter.vue";
 
 @Options({
   components: {
@@ -18,6 +19,7 @@ import Text1image from "@/components/Text1image/Text1image.vue";
     Headertext,
     Background_Image,
     Textimage,
+    Ourworldsfooter,
     Footer
   },
 })
@@ -56,29 +58,31 @@ export default class About extends Vue {
         }
     ]
 
-  content1 = `<p>Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.</p>`
+  content1 = `<p>Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.</p>`;
 
-  content2title = "Our Mission"
-  content2para1 = `<p>We don’t build buildings, but rather we build settings where families can create intergenerational memories and enrich their lives in exquisite and untouched sanctuaries. Everything we do is driven by the fundamental desire to create spaces where families can be together.</p>`
-  content2para2 = `<p>These settings offer a relaxed and comfortable sense of community featuring outstanding clubhouses, incredible residential offerings, premier golf courses, welcoming staff, world-class culinary offerings and our custom Outdoor Pursuits program; all offering the highest of service standards to enrich your experience. </p>`
-  content2url = "https://dxaurk9yhilm4.cloudfront.net/images/163/What_we_do_intro_5ae402c9837860cd6e4f65e304b3a5fa.jpg"
+  content2title = "Our Mission";
+  content2para1 = `<p>We don’t build buildings, but rather we build settings where families can create intergenerational memories and enrich their lives in exquisite and untouched sanctuaries. Everything we do is driven by the fundamental desire to create spaces where families can be together.</p>`;
+  content2para2 = `<p>These settings offer a relaxed and comfortable sense of community featuring outstanding clubhouses, incredible residential offerings, premier golf courses, welcoming staff, world-class culinary offerings and our custom Outdoor Pursuits program; all offering the highest of service standards to enrich your experience. </p>`;
+  content2url = "https://dxaurk9yhilm4.cloudfront.net/images/163/What_we_do_intro_5ae402c9837860cd6e4f65e304b3a5fa.jpg";
 
-  content4text1 = "The Discovery Difference"
-  content4text2 = " "
+  content4text1 = "The Discovery Difference";
+  content4text2 = " ";
 
-  content5url = "https://dxaurk9yhilm4.cloudfront.net/images/159/What_we_do_design_hero_62018727b9e8103a3d5d6c0701991eca.jpg"
+  content5url = "https://dxaurk9yhilm4.cloudfront.net/images/159/What_we_do_design_hero_62018727b9e8103a3d5d6c0701991eca.jpg";
 
-  content7url = "https://dxaurk9yhilm4.cloudfront.net/images/890/YCGolfClubHouse0916_1288_62018727b9e8103a3d5d6c0701991eca.jpg"
+  content7url = "https://dxaurk9yhilm4.cloudfront.net/images/890/YCGolfClubHouse0916_1288_62018727b9e8103a3d5d6c0701991eca.jpg";
 
-  content6lefturl = "https://dxaurk9yhilm4.cloudfront.net/images/157/What_we_do_design_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg"
-  content6title = "Discovery Design"
-  content6para = `<p>See the beauty in every corner of your new, bespoke home away from home. From fabrics and furniture pieces to floorplans, our professional designers will collaborate closely with you to create an interior living space which reflects your style and unique tastes as well as perfectly complementing your lifestyle.</p>`
+  content6lefturl = "https://dxaurk9yhilm4.cloudfront.net/images/157/What_we_do_design_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg";
+  content6title = "Discovery Design";
+  content6para = `<p>See the beauty in every corner of your new, bespoke home away from home. From fabrics and furniture pieces to floorplans, our professional designers will collaborate closely with you to create an interior living space which reflects your style and unique tastes as well as perfectly complementing your lifestyle.</p>`;
   content6righturl = "https://dxaurk9yhilm4.cloudfront.net/images/158/What_we_do_design_2_2ab4534b0a2984e07d7caeca8808129f.jpg"
   content6 = true;
 
-  content8righturl = "https://dxaurk9yhilm4.cloudfront.net/images/155/What_we_do_builders_2_2ab4534b0a2984e07d7caeca8808129f.jpg"
-  content8title = "Discovery Builders"
-  content8para = `<p>Every Discovery property is wonderfully in-tune with its natural surroundings - a harmonious blend of the architecturally impressive with the environmentally sensitive. And your every expectation will be met, with our meticulous eye for detail matching outstanding levels of craftsmanship and master building.</p>`
-  content8lefturl = "https://dxaurk9yhilm4.cloudfront.net/images/153/What_we_do_builders_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg"
+  content8righturl = "https://dxaurk9yhilm4.cloudfront.net/images/155/What_we_do_builders_2_2ab4534b0a2984e07d7caeca8808129f.jpg";
+  content8title = "Discovery Builders";
+  content8para = `<p>Every Discovery property is wonderfully in-tune with its natural surroundings - a harmonious blend of the architecturally impressive with the environmentally sensitive. And your every expectation will be met, with our meticulous eye for detail matching outstanding levels of craftsmanship and master building.</p>`;
+  content8lefturl = "https://dxaurk9yhilm4.cloudfront.net/images/153/What_we_do_builders_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg";
   content8 = false;
+
+  content9url = "https://dxaurk9yhilm4.cloudfront.net/images/160/What_we_do_footer_2_5dabbd1a34149dcaed83515ff1526a0f.jpg";
 }

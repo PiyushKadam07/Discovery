@@ -5,8 +5,8 @@
           <source src="../../assets/main.mp4" type="video/mp4" />
       </video>
       <div class="videotitle">
-        <div class="videotext">Discover</div>
-        <div class="videotext1">your world</div>
+        <div class="videotext"> {{ text1 }} </div>
+        <div class="videotext1"> {{ text2 }} </div>
       </div>
     </div>
 </template>

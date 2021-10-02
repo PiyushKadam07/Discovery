@@ -272,6 +272,9 @@ export default class Home extends Vue {
         },
     ];
 
+    videotext1 = "Discover";
+    videotext2 = "your world";
+    
     content2text1 = "Explore";
     content2text2 = "our worlds";
 }

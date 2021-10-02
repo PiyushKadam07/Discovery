@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Header />
-    <Homevideo />
+    <Homevideo :text1="videotext1" :text2="videotext2"/>
     <div class="content1bg">
       <div class="content1">
         <div class="leftcolumn">
