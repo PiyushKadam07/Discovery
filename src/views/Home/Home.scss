@@ -1,0 +1,272 @@
+body {
+    margin: 0px;
+}
+
+.text1 {
+    text-align: left;
+    font-size: 40px;
+    font-family: "Average", serif;
+}
+
+.text2 {
+    text-align: left;
+    font-size: 38px;
+    font-family: gotham;
+    letter-spacing: 2px;
+}
+
+.content1bg {
+    background-image: url("https://dxaurk9yhilm4.cloudfront.net/images/287/background_imagev2_3580431e48aedf97dcedf972d1481942.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .title {
+        margin-bottom: 2rem;
+        line-height: 1.1;
+        transform-origin: left;
+    }
+      
+    .content1 {
+        width: 75%;
+        margin: 0 auto;
+        height: 100%;
+        grid-gap: 105px;
+        padding: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "content img1"
+          "img2    img1";
+    
+        .leftcolumn {
+            grid-area: content;
+            padding: 10px;
+        }
+    
+        .rightcolumn {
+            width: 400px;
+            grid-area: img1;
+            padding: 10px;
+            height: 720px;
+        }
+
+        .leftend {
+            width: 370px;
+            grid-area: img2;
+            padding: 10px;
+        }
+    }
+      
+    .para {
+        display: block; 
+        text-align: start; 
+        position: relative; 
+        opacity: 1; 
+        transform: translate(0px, 0px);
+        font-size: 14px;
+        font-family: messina-sans;
+        color: #777;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+      
+    .welcomeimg {
+        width: 110%;
+        height: 85%;
+        margin-left: -10px;
+    }
+    
+    .welcomeimg1 {
+        width: 100%;
+        height: 78%;
+    }
+}
+  
+.content2 {
+    width: 100%;
+    height: 100%;
+
+    @mixin white-gradient {
+        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
+    
+    $animationSpeed: 40s;
+    
+    // Animation
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7))}
+    }
+    
+    // Styling
+    .slider {
+        overflow:hidden;
+        display: flex;
+        width: 100%;
+        
+        &::before, &::after {
+            @include white-gradient;
+            content: "";
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            width: 60%;
+
+            @media screen and (max-width: 480px) {
+                width: 100%;
+            }
+        }
+        
+        .slide {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.content4 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: -4%;
+  
+    .imgcontents {
+        display: flex;
+    }
+    
+    .img-content4 {
+        width: 33.33%;
+    }
+    
+    .img-content4 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imgtext {
+        font-family: gotham;
+        font-size: 33px;
+        color: #fff;
+        z-index: 100;
+        position: relative;
+        bottom: 54%;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content1bg .content1 {
+        width: 95%;
+        margin: 0 auto;
+        grid-gap: 30px;
+        padding: 20px;
+
+        .rightcolumn {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .leftend {
+            width: 90%;
+        }
+
+        .para {
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+
+    .content4 {
+        margin-top: -4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content1bg {
+        background-position: center;
+
+        .content1 {
+            width: 100%;
+            grid-template-columns: auto;
+            grid-template-areas:
+            "content"
+            "img1"
+            "img2";
+            padding: 0px;
+
+            .leftcolumn {
+                padding-top: 10%;
+                width: 66%;
+                margin: 0 auto;
+            }
+        
+            .rightcolumn {
+                width: 65%;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            .leftend {
+                width: 100%;
+                margin: 0;
+                padding: 0px;
+                margin-top: -4%;
+            }
+
+            .welcomeimg {
+                width: 100%;
+                height: 90%;
+            }
+            
+            .welcomeimg1 {
+                width: 100%;
+                height: 90%;
+            }
+        }
+    }
+
+    .content4 {
+        .imgtext {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content1 {
+        .leftcolumn {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .para {
+            font-size: 12px;
+        }
+    }
+
+    .content4 {
+        .imgcontents {
+            flex-direction: column;
+        }
+
+        .img-content4 {
+            width: 100%;
+            height: 80vh;
+        }
+    }
+}
+
+  

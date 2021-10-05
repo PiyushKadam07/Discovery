@@ -1,0 +1,63 @@
+.video-container, video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    object-fit: fill;
+}
+  
+.videotitle {
+    color: #fff;
+    text-align: left;
+    z-index: 100;
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    width: 60%;
+}
+  
+.videotext {
+    font-size: 67px;
+    font-family: gt-sectra;
+}
+  
+.videotext1 {
+    font-size: 65px;
+    font-family: gotham;
+    margin-top: -15px;
+    letter-spacing: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+    .video-container, video {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .videotitle {
+        position: absolute;
+    }
+
+    .videotext {
+        font-size: 55px;
+    }
+
+    .videotext1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .videotext1 {
+        letter-spacing: 3px;
+    }
+
+    .videotext {
+        font-size: 45px;
+    }
+
+    .videotext1 {
+        font-size: 35px;
+    }
+}
+

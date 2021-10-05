@@ -1,0 +1,11 @@
+.ourworldimage {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
+}
+
