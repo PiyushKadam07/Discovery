@@ -1,4 +1,13 @@
-import { Vue } from 'vue-class-component';
+import { Options, Vue } from 'vue-class-component';
+
+@Options({
+    name: "Header",
+    data(){
+        return{
+            iconopen: false,
+        };
+    }
+})
 
 export default class Header extends Vue {
     routes = [
